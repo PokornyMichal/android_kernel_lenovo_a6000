@@ -6153,7 +6153,7 @@ SYSCALL_DEFINE3(sched_setscheduler, pid_t, pid, int, policy,
 	if (policy < 0)
 		return -EINVAL;
 
-	if (sysctl_tune_android_tasks > 0)
+	if (sysctl_tune_android_tasks == 2)
 		return 0;
 	else
 		return do_sched_setscheduler(pid, policy, param);
