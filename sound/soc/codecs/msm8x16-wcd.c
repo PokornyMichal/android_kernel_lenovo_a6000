@@ -141,7 +141,7 @@ static struct snd_soc_dai_driver msm8x16_wcd_i2s_dai[];
 #ifdef CONFIG_PHANTOM_GAIN_CONTROL
 static struct snd_soc_codec *sound_control_codec_ptr;
 static int lgain,rgain = 0;
-static int sgain = 7;
+static int sgain = 0;
 #endif
 static struct switch_dev accdet_data;
 static int accdet_state = 0;
